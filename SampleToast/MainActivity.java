@@ -8,9 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.GridLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -53,5 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         toast.setView(layout);
         toast.show();
+    }
+
+    public void onButton3Clicked(View v) {
+        Snackbar.make(v, "스낵바입니다.", Snackbar.LENGTH_LONG).show();
     }
 }
